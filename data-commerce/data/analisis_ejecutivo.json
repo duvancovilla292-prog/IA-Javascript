@@ -1,0 +1,248 @@
+{
+    "resumen_ejecutivo": {
+    "ventas_totales": 10565000,
+    "unidades_vendidas": 489,
+    "ticket_promedio": 92675.44
+    },
+    "ventas": {
+    "ventas_por_producto": [
+    {
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "unidades": 48,
+    "ingresos": 1152000,
+    "participacion_porcentaje": 10.90
+    },
+    {
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "unidades": 101,
+    "ingresos": 3232000,
+    "participacion_porcentaje": 30.59
+    },
+    {
+    "id_producto": "P003",
+    "producto": "Perro Caliente Suizo",
+    "unidades": 15,
+    "ingresos": 240000,
+    "participacion_porcentaje": 2.27
+    },
+    {
+    "id_producto": "P004",
+    "producto": "Combo Perro Caliente + Papas + Gaseosa",
+    "unidades": 25,
+    "ingresos": 575000,
+    "participacion_porcentaje": 5.44
+    },
+    {
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "unidades": 24,
+    "ingresos": 456000,
+    "participacion_porcentaje": 4.32
+    },
+    {
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "unidades": 22,
+    "ingresos": 462000,
+    "participacion_porcentaje": 4.37
+    },
+    {
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "unidades": 29,
+    "ingresos": 232000,
+    "participacion_porcentaje": 2.19
+    },
+    {
+    "id_producto": "P008",
+    "producto": "Nuggets de Pollo x10",
+    "unidades": 8,
+    "ingresos": 112000,
+    "participacion_porcentaje": 1.06
+    },
+    {
+    "id_producto": "P009",
+    "producto": "Alitas BBQ x8",
+    "unidades": 19,
+    "ingresos": 418000,
+    "participacion_porcentaje": 3.96
+    },
+    {
+    "id_producto": "P010",
+    "producto": "Wrap de Pollo Teriyaki",
+    "unidades": 12,
+    "ingresos": 210000,
+    "participacion_porcentaje": 1.99
+    },
+    {
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "unidades": 139,
+    "ingresos": 695000,
+    "participacion_porcentaje": 6.58
+    },
+    {
+    "id_producto": "P012",
+    "producto": "Jugo Natural en Agua",
+    "unidades": 6,
+    "ingresos": 36000,
+    "participacion_porcentaje": 0.34
+    },
+    {
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "unidades": 29,
+    "ingresos": 319000,
+    "participacion_porcentaje": 3.02
+    },
+    {
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "unidades": 34,
+    "ingresos": 221000,
+    "participacion_porcentaje": 2.09
+    },
+    {
+    "id_producto": "P015",
+    "producto": "Sundae de Arequipe",
+    "unidades": 23,
+    "ingresos": 172500,
+    "participacion_porcentaje": 1.63
+    }
+    ],
+    "top_5_productos": [
+    {
+    "posicion": 1,
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "unidades_vendidas": 101,
+    "ingresos": 3232000,
+    "porcentaje_participacion": 30.59
+    },
+    {
+    "posicion": 2,
+    "producto": "Hamburguesa Súper Especial",
+    "unidades_vendidas": 48,
+    "ingresos": 1152000,
+    "porcentaje_participacion": 10.90
+    },
+    {
+    "posicion": 3,
+    "producto": "Gaseosa 400ml",
+    "unidades_vendidas": 139,
+    "ingresos": 695000,
+    "porcentaje_participacion": 6.58
+    },
+    {
+    "posicion": 4,
+    "combo": "Combo Perro Caliente + Papas + Gaseosa",
+    "unidades_vendidas": 25,
+    "ingresos": 575000,
+    "porcentaje_participacion": 5.44
+    },
+    {
+    "posicion": 5,
+    "producto": "Salchipapa Salvaje",
+    "unidades_vendidas": 22,
+    "ingresos": 462000,
+    "porcentaje_participacion": 4.37
+    }
+    ]
+    },
+    "rentabilidad": {
+    "producto_mas_rentable": {
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "utilidad_total": 1357440,
+    "ventas_generadas": 3232000
+    },
+    "utilidad_por_producto": [
+    { "id_producto": "P001", "producto": "Hamburguesa Súper Especial", "utilidad_total": 460800 },
+    { "id_producto": "P002", "producto": "Combo Hamburguesa + Papas + Gaseosa", "utilidad_total": 1357440 },
+    { "id_producto": "P003", "producto": "Perro Caliente Suizo", "utilidad_total": 86400 },
+    { "id_producto": "P004", "producto": "Combo Perro Caliente + Papas + Gaseosa", "utilidad_total": 235750 },
+    { "id_producto": "P005", "producto": "Pizza Personal Pepperoni", "utilidad_total": 173280 },
+    { "id_producto": "P006", "producto": "Salchipapa Salvaje", "utilidad_total": 170940 },
+    { "id_producto": "P007", "producto": "Papas Fritas Medianas", "utilidad_total": 102080 },
+    { "id_producto": "P008", "producto": "Nuggets de Pollo x10", "utilidad_total": 41440 },
+    { "id_producto": "P009", "producto": "Alitas BBQ x8", "utilidad_total": 146300 },
+    { "id_producto": "P010", "producto": "Wrap de Pollo Teriyaki", "utilidad_total": 77700 },
+    { "id_producto": "P011", "producto": "Gaseosa 400ml", "utilidad_total": 326650 },
+    { "id_producto": "P012", "producto": "Jugo Natural en Agua", "utilidad_total": 15120 },
+    { "id_producto": "P013", "producto": "Malteada de Chocolate", "utilidad_total": 124410 },
+    { "id_producto": "P014", "producto": "Limonada Natural", "utilidad_total": 101660 },
+    { "id_producto": "P015", "producto": "Sundae de Arequipe", "utilidad_total": 72450 }
+    ],
+    "margen_por_producto": [
+    { "id_producto": "P011", "producto": "Gaseosa 400ml", "margen_porcentaje": 47.00 },
+    { "id_producto": "P014", "producto": "Limonada Natural", "margen_porcentaje": 46.00 },
+    { "id_producto": "P015", "producto": "Sundae de Arequipe", "margen_porcentaje": 42.00 },
+    { "id_producto": "P007", "producto": "Papas Fritas Medianas", "margen_porcentaje": 44.00 },
+    { "id_producto": "P002", "producto": "Combo Hamburguesa + Papas + Gaseosa", "margen_porcentaje": 42.00 },
+    { "id_producto": "P004", "producto": "Combo Perro Caliente + Papas + Gaseosa", "margen_porcentaje": 41.00 },
+    { "id_producto": "P001", "producto": "Hamburguesa Súper Especial", "margen_porcentaje": 40.00 },
+    { "id_producto": "P013", "producto": "Malteada de Chocolate", "margen_porcentaje": 39.00 },
+    { "id_producto": "P005", "producto": "Pizza Personal Pepperoni", "margen_porcentaje": 38.00 },
+    { "id_producto": "P006", "producto": "Salchipapa Salvaje", "margen_porcentaje": 37.00 },
+    { "id_producto": "P003", "producto": "Perro Caliente Suizo", "margen_porcentaje": 36.00 },
+    { "id_producto": "P010", "producto": "Wrap de Pollo Teriyaki", "margen_porcentaje": 37.00 },
+    { "id_producto": "P009", "producto": "Alitas BBQ x8", "margen_porcentaje": 35.00 },
+    { "id_producto": "P008", "producto": "Nuggets de Pollo x10", "margen_porcentaje": 37.00 },
+    { "id_producto": "P012", "producto": "Jugo Natural en Agua", "margen_porcentaje": 42.00 }
+    ]
+    },
+    "inventario": {
+    "productos_inventario_bajo": [
+    {
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad_existente": 18,
+    "demanda_mes": 29,
+    "estado": "Critico"
+    },
+    {
+    "id_producto": "P010",
+    "producto": "Wrap de Pollo Teriyaki",
+    "cantidad_existente": 12,
+    "demanda_mes": 12,
+    "estado": "Riesgo de desabastecimiento"
+    }
+    ],
+    "productos_mayor_rotacion": [
+    { "id_producto": "P011", "producto": "Gaseosa 400ml", "unidades_vendidas": 139 },
+    { "id_producto": "P002", "producto": "Combo Hamburguesa + Papas + Gaseosa", "unidades_vendidas": 101 },
+    { "id_producto": "P001", "producto": "Hamburguesa Súper Especial", "unidades_vendidas": 48 }
+    ],
+    "productos_baja_demanda": [
+    { "id_producto": "P012", "producto": "Jugo Natural en Agua", "unidades_vendidas": 6 },
+    { "id_producto": "P008", "producto": "Nuggets de Pollo x10", "unidades_vendidas": 8 }
+    ]
+    },
+    "hallazgos": [
+    "El 'Combo Hamburguesa + Papas + Gaseosa' es el motor principal de ingresos del negocio, representando de forma individual el 30.59% de las ventas totales de la tienda.",
+    "Las bebidas en conjunto (Gaseosa, Limonada, Jugo y Malteadas) acumulan un volumen crítico del 42.53% de las unidades físicas distribuidas en el mes.",
+    "El producto individual con mayor margen porcentual de ganancia es la 'Gaseosa 400ml' con un 47%, actuando como un pilar fundamental de rentabilidad transaccional.",
+    "Existe una vulnerabilidad severa de desabastecimiento en la categoría de acompañamientos con las 'Papas Fritas Medianas', cuyas existencias actuales (18 unidades) se sitúan significativamente por debajo de la demanda media mensual (29 unidades).",
+    "Los fines de semana (viernes, sábado y domingo) concentran más del 65% del volumen total de transacciones e ingresos registrados, evidenciando una fuerte estacionalidad semanal."
+    ],
+    "insights": [
+    "Los combos estructurados ('Combo Hamburguesa' y 'Combo Perro') logran un excelente balance comercial al emparejar una altísima demanda de volumen con un sólido margen de utilidad superior al 41%, validando la efectividad del empaquetamiento de productos.",
+    "El 'Wrap de Pollo Teriyaki' muestra una rotación perfecta de 100% (12 unidades vendidas frente a 12 existentes), indicando que su baja demanda histórica puede estar artificialmente limitada por la falta de inventario disponible en piso de venta.",
+    "La categoría de bebidas naturales e infantiles ('Jugo en Agua' y 'Nuggets') representa un costo de oportunidad dormido, ya que posee márgenes rentables estables pero sufre de una nula tracción comercial o visibilidad en el menú actual."
+    ],
+    "recomendaciones": [
+    "Emitir una orden de compra urgente al proveedor 'Congelados Agropecuarios' para triplicar las existencias de 'Papas Fritas Medianas' y evitar quiebres de stock que afecten la venta de los platos fuertes.",
+    "Diseñar una campaña agresiva de Email Marketing centrada en el 'Combo Hamburguesa + Papas + Gaseosa' (producto estrella) orientada a capturar recompras durante los días de baja actividad comercial (lunes a miércoles).",
+    "Incrementar la base de stock para el 'Wrap de Pollo Teriyaki' con el proveedor 'Comercializadora de Alimentos Frescos' a un mínimo de 40 unidades mensuales para testear el techo real de su demanda de mercado."
+    ],
+    "proyeccion_demanda": {
+    "periodo": "proxima_semana",
+    "productos_estimados": [
+    { "id_producto": "P002", "producto": "Combo Hamburguesa + Papas + Gaseosa", "cantidad_estimada": 26, "necesidad_inventario": "Abundante" },
+    { "id_producto": "P011", "producto": "Gaseosa 400ml", "cantidad_estimada": 35, "necesidad_inventario": "Abundante" },
+    { "id_producto": "P001", "producto": "Hamburguesa Súper Especial", "cantidad_estimada": 12, "necesidad_inventario": "Media" },
+    { "id_producto": "P007", "producto": "Papas Fritas Medianas", "cantidad_estimada": 8, "necesidad_inventario": "Urgente (Reabastecer)" }
+    ]
+    }
+    }

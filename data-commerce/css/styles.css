@@ -1,0 +1,687 @@
+/* ==========================================================================
+   1. VARIABLES, FUENTES Y PALETA NEÓN PREMIUM
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+   :root {
+       /* Paleta Base (Espacio Profundo y Fríos) */
+       --bg-main: #060913;
+       --bg-surface: #0f1526;
+       --bg-surface-light: #172036;
+       --text-primary: #f8fafc;
+       --text-secondary: #94a3b8;
+       --text-muted: #64748b;
+       --border-color: #1e293b;
+       
+       /* Colores Neón Activos */
+       --neon-cyan: #00f2fe;
+       --neon-blue: #3b82f6;
+       --neon-purple: #9d4edd;
+       --neon-green: #00ff87;
+       --neon-pink: #ff007f;
+       
+       /* Efectos de Brillo Amplificados (Glow) */
+       --glow-cyan: 0 0 20px rgba(0, 242, 254, 0.25), 0 0 40px rgba(0, 242, 254, 0.1);
+       --glow-blue: 0 0 20px rgba(59, 130, 246, 0.25);
+       --glow-purple: 0 0 25px rgba(157, 78, 221, 0.25);
+       --shadow-main: 0 20px 40px rgba(0, 0, 0, 0.6);
+       
+       /* Configuración Macro y Tipografía */
+       --font-sans: 'Plus Jakarta Sans', sans-serif;
+       --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+   }
+   
+   /* Reset Avanzado y Globales */
+   *, *::before, *::after {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+   }
+   
+   body {
+       background-color: var(--bg-main);
+       color: var(--text-primary);
+       font-family: var(--font-sans);
+       line-height: 1.7;
+       overflow-x: hidden;
+       letter-spacing: -0.01em;
+   }
+   
+   a {
+       color: inherit;
+       text-decoration: none;
+       transition: var(--transition-smooth);
+   }
+   
+   ul {
+       list-style: none;
+   }
+   
+   /* ==========================================================================
+      2. COMPONENTES GLOBALES Y REUTILIZABLES (Badges, Tablas, Botones Macro)
+      ========================================================================== */
+   
+   .badge {
+       background: rgba(0, 242, 254, 0.06);
+       border: 1px solid rgba(0, 242, 254, 0.4);
+       color: var(--neon-cyan);
+       padding: 6px 14px;
+       border-radius: 100px;
+       font-size: 0.8rem;
+       font-weight: 700;
+       text-transform: uppercase;
+       letter-spacing: 0.08em;
+       box-shadow: var(--glow-cyan);
+   }
+   
+   .alert-indicator-badge {
+       background: rgba(255, 0, 127, 0.08);
+       border: 1px solid rgba(255, 0, 127, 0.4);
+       color: var(--neon-pink);
+       padding: 8px 18px;
+       border-radius: 8px;
+       font-size: 0.9rem;
+       font-weight: 700;
+       box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+   }
+   
+   .btn-primary {
+       display: inline-block;
+       background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan));
+       color: #ffffff;
+       font-weight: 700;
+       font-size: 1.05rem;
+       padding: 16px 36px;
+       border-radius: 12px;
+       box-shadow: var(--glow-cyan);
+       cursor: pointer;
+       border: none;
+       transition: var(--transition-smooth);
+   }
+   
+   .btn-primary:hover {
+       transform: translateY(-3px) scale(1.02);
+       box-shadow: 0 0 30px rgba(0, 242, 254, 0.6);
+   }
+   
+   /* Tablas Corporativas Ampliadas */
+   .table-responsive {
+       width: 100%;
+       overflow-x: auto;
+       margin-top: 25px;
+       border-radius: 14px;
+       border: 1px solid var(--border-color);
+       background: rgba(15, 21, 38, 0.5);
+   }
+   
+   .admin-table {
+       width: 100%;
+       border-collapse: collapse;
+       text-align: left;
+       font-size: 0.95rem;
+   }
+   
+   .admin-table th {
+       background-color: var(--bg-surface-light);
+       color: var(--text-primary);
+       padding: 18px 24px;
+       font-weight: 700;
+       text-transform: uppercase;
+       font-size: 0.8rem;
+       letter-spacing: 0.05em;
+       border-bottom: 2px solid var(--border-color);
+   }
+   
+   .admin-table td {
+       padding: 20px 24px;
+       border-bottom: 1px solid var(--border-color);
+       color: var(--text-secondary);
+   }
+   
+   .admin-table tbody tr:hover {
+       background-color: rgba(23, 32, 54, 0.5);
+   }
+   
+   .text-center { text-align: center; }
+   
+   /* Contenedores de Bloques Base */
+   .card-container {
+       background: var(--bg-surface);
+       border: 1px solid rgba(30, 41, 59, 0.7);
+       border-radius: 20px;
+       padding: 36px;
+       box-shadow: var(--shadow-main);
+       transition: var(--transition-smooth);
+   }
+   
+   .card-header h2 {
+       font-size: 1.6rem;
+       font-weight: 800;
+       letter-spacing: -0.03em;
+       margin-bottom: 6px;
+   }
+   
+   .card-header p {
+       color: var(--text-secondary);
+       font-size: 1rem;
+       margin-bottom: 24px;
+   }
+   
+   /* ==========================================================================
+      3. MAQUETACIÓN: ARCHIVO 1 - EXPRESS ADMIN (PANEL DE CONTROL INTERNO)
+      ========================================================================== */
+   .admin-header {
+       background-color: rgba(6, 9, 19, 0.8);
+       backdrop-filter: blur(20px);
+       -webkit-backdrop-filter: blur(20px);
+       border-bottom: 1px solid var(--border-color);
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 24px 60px;
+       position: sticky;
+       top: 0;
+       z-index: 100;
+   }
+   
+   .header-brand {
+       display: flex;
+       align-items: center;
+       gap: 16px;
+   }
+   
+   .header-brand h1 {
+       font-size: 1.8rem;
+       background: linear-gradient(to right, var(--neon-cyan), var(--neon-blue));
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       font-weight: 800;
+   }
+   
+   .admin-nav ul {
+       display: flex;
+       gap: 12px;
+   }
+   
+   .admin-nav a {
+       color: var(--text-secondary);
+       font-weight: 600;
+       padding: 10px 20px;
+       border-radius: 10px;
+       font-size: 0.95rem;
+   }
+   
+   .admin-nav a:hover, .admin-nav a.active {
+       color: var(--neon-cyan);
+       background: rgba(0, 242, 254, 0.08);
+   }
+   
+   .admin-dashboard {
+       padding: 60px;
+       max-width: 1600px;
+       margin: 0 auto;
+   }
+   
+   /* Cuadrícula de KPIs Gigantes */
+   .kpi-grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+       gap: 30px;
+       margin-bottom: 60px;
+   }
+   
+   .kpi-card {
+       background: linear-gradient(145deg, var(--bg-surface), #0d1322);
+       border: 1px solid rgba(255, 255, 255, 0.03);
+       border-radius: 20px;
+       padding: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       box-shadow: var(--shadow-main);
+       min-height: 160px;
+   }
+   
+   #kpi-ventas { border-top: 4px solid var(--neon-cyan); }
+   #kpi-unidades { border-top: 4px solid var(--neon-blue); }
+   #kpi-ticket { border-top: 4px solid var(--neon-purple); }
+   #kpi-estrella { border-top: 4px solid var(--neon-green); }
+   #kpi-utilidad { border-top: 4px solid var(--neon-pink); }
+   
+   .kpi-info h3 {
+       color: var(--text-secondary);
+       font-size: 0.9rem;
+       text-transform: uppercase;
+       letter-spacing: 0.06em;
+       margin-bottom: 12px;
+   }
+   
+   .kpi-value {
+       font-size: 2.4rem;
+       font-weight: 800;
+       letter-spacing: -0.02em;
+       color: #ffffff;
+   }
+   
+   .kpi-trend {
+       align-self: flex-start;
+       font-size: 0.85rem;
+       font-weight: 700;
+       margin-top: 14px;
+       padding: 4px 10px;
+       border-radius: 6px;
+       background: rgba(255, 255, 255, 0.05);
+   }
+   
+   /* Gráficos y Tablas */
+   .data-grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+       gap: 40px;
+       margin-bottom: 60px;
+   }
+   
+   .card-full-width { grid-column: 1 / -1; }
+   
+   .header-with-actions {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .css-bar-chart {
+       display: flex;
+       flex-direction: column;
+       gap: 16px;
+       margin-bottom: 35px;
+       background: rgba(6, 9, 19, 0.6);
+       padding: 24px;
+       border-radius: 14px;
+   }
+   
+   .notification-zone {
+       background: rgba(255, 0, 127, 0.04);
+       border-left: 5px solid var(--neon-pink);
+       padding: 20px 28px;
+       border-radius: 0 14px 14px 0;
+       margin-bottom: 25px;
+       font-size: 1rem;
+   }
+   
+   /* Proyecciones */
+   .grid-two-columns {
+       display: grid;
+       grid-template-columns: 1fr 1.8fr;
+       gap: 40px;
+   }
+   
+   .projection-summary-box {
+       background: var(--bg-surface-light);
+       padding: 30px;
+       border-radius: 16px;
+       border: 1px solid var(--border-color);
+   }
+   
+   .projection-summary-box h3 {
+       font-size: 1.3rem;
+       margin-bottom: 14px;
+       color: var(--neon-green);
+   }
+   
+   .styled-list li {
+       position: relative;
+       padding-left: 28px;
+       margin-bottom: 14px;
+       font-size: 1rem;
+       color: var(--text-secondary);
+   }
+   
+   .styled-list li::before {
+       content: "→";
+       position: absolute;
+       left: 0;
+       color: var(--neon-green);
+       font-weight: 800;
+   }
+   
+   /* ==========================================================================
+      4. MAQUETACIÓN: ARCHIVO 2 - EXPRESS INDEX (VISTA PÚBLICA / MENÚ MONUMENTAL)
+      ========================================================================== */
+   .header-container {
+       max-width: 1600px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 30px 60px;
+   }
+   
+   header .logo h1 {
+       font-size: 2.2rem;
+       font-weight: 800;
+       background: linear-gradient(to right, var(--neon-cyan), var(--neon-purple));
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       letter-spacing: -0.04em;
+   }
+   
+   header .logo p {
+       font-size: 0.8rem;
+       color: var(--neon-cyan);
+       text-transform: uppercase;
+       letter-spacing: 0.25em;
+       margin-top: 2px;
+   }
+   
+   header nav ul {
+       display: flex;
+       gap: 40px;
+   }
+   
+   header nav a {
+       font-weight: 700;
+       font-size: 1.05rem;
+       color: var(--text-secondary);
+   }
+   
+   header nav a:hover {
+       color: #ffffff;
+       text-shadow: var(--glow-purple);
+   }
+   
+   .cart-status a {
+       background: var(--bg-surface);
+       border: 1px solid var(--border-color);
+       padding: 14px 28px;
+       border-radius: 100px;
+       font-weight: 700;
+       font-size: 1rem;
+       display: flex;
+       align-items: center;
+       gap: 12px;
+   }
+   
+   .cart-status a:hover {
+       border-color: var(--neon-cyan);
+       box-shadow: var(--glow-cyan);
+   }
+   
+   #cart-count {
+       background: var(--neon-cyan);
+       color: var(--bg-main);
+       padding: 2px 10px;
+       border-radius: 100px;
+       font-size: 0.9rem;
+   }
+   
+   /* Hero */
+   .hero-banner {
+       padding: 160px 60px;
+       text-align: center;
+       background: radial-gradient(circle at 50% 30%, rgba(157, 78, 221, 0.12) 0%, transparent 60%);
+   }
+   
+   .hero-content {
+       max-width: 850px;
+       margin: 0 auto;
+   }
+   
+   .hero-content h2 {
+       font-size: 3.8rem;
+       font-weight: 800;
+       line-height: 1.15;
+       margin-bottom: 24px;
+       letter-spacing: -0.04em;
+       background: linear-gradient(to bottom, #ffffff 70%, var(--text-secondary));
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+   }
+   
+   .hero-content p {
+       color: var(--text-secondary);
+       font-size: 1.3rem;
+       margin-bottom: 45px;
+   }
+   
+   /* Secciones de Contenido */
+   .products-section {
+       padding: 100px 60px;
+       max-width: 1600px;
+       margin: 0 auto;
+   }
+   
+   .section-header h2 {
+       font-size: 2.6rem;
+       font-weight: 800;
+       letter-spacing: -0.03em;
+   }
+   
+   .section-header p {
+       font-size: 1.1rem;
+       color: var(--text-secondary);
+       margin-top: 8px;
+   }
+   
+   .menu-categories {
+       display: flex;
+       gap: 16px;
+       margin-top: 30px;
+   }
+   
+   .btn-category {
+       background: var(--bg-surface);
+       border: 1px solid var(--border-color);
+       color: var(--text-secondary);
+       padding: 14px 32px;
+       border-radius: 100px;
+       cursor: pointer;
+       font-weight: 700;
+       font-size: 1rem;
+       transition: var(--transition-smooth);
+   }
+   
+   .btn-category:hover, .btn-category.active {
+       background: rgba(0, 242, 254, 0.08);
+       border-color: var(--neon-cyan);
+       color: var(--neon-cyan);
+       box-shadow: var(--glow-cyan);
+   }
+   
+   /* ==========================================================================
+      CAMBIO ESTRUCTURAL CRÍTICO: TARJETAS GRANDES Y RESPIRACIÓN VISUAL (3 COLUMNAS MÁX)
+      ========================================================================== */
+   .products-grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); /* Tarjetas robustas y anchas */
+       gap: 45px; /* Separación impecable */
+       padding: 30px 0;
+   }
+   
+   .product-card {
+       background: linear-gradient(145deg, #0f1526, #090d16);
+       border: 1px solid rgba(255, 255, 255, 0.04);
+       border-radius: 24px; /* Curvatura sofisticada */
+       overflow: hidden;
+       box-shadow: var(--shadow-main);
+       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                   border-color 0.4s ease, 
+                   box-shadow 0.4s ease;
+       display: flex;
+       flex-direction: column;
+   }
+   
+   /* Hover con Glow Unificado */
+   .product-card:hover {
+       transform: translateY(-10px);
+       border-color: var(--neon-cyan);
+       box-shadow: 0 0 30px rgba(0, 242, 254, 0.25), 0 15px 40px rgba(0, 0, 0, 0.8);
+   }
+   
+   /* Ajuste específico para cuando el JS inyecta bordes dinámicos de destaque */
+   .product-card[style*="border"], .product-card.active-card {
+       border: 1.5px solid var(--neon-purple) !important;
+       box-shadow: 0 0 25px rgba(157, 78, 221, 0.25) !important;
+   }
+   
+   /* Marcador de imagen con presencia gráfica */
+   .product-image-placeholder {
+       height: 220px;
+       background: linear-gradient(135deg, rgba(23, 32, 54, 0.6), rgba(6, 9, 19, 0.8));
+       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .product-image-placeholder::before {
+       content: "⚡ EXPRESS BITE BANNER";
+       font-size: 0.75rem;
+       font-weight: 800;
+       letter-spacing: 0.3em;
+       color: var(--text-muted);
+       opacity: 0.35;
+   }
+   
+   /* Bloque Informativo Interno Expandido */
+   .product-info {
+       padding: 36px; /* Más aire libre dentro de la tarjeta */
+       display: flex;
+       flex-direction: column;
+       flex-grow: 1;
+   }
+   
+   .product-info h3 {
+       font-size: 1.6rem; /* Títulos masivos */
+       font-weight: 800;
+       color: #ffffff;
+       line-height: 1.3;
+       margin-bottom: 12px;
+       letter-spacing: -0.02em;
+   }
+   
+   .product-description {
+       color: var(--text-secondary);
+       font-size: 1rem;
+       line-height: 1.6;
+       height: auto;
+       margin-bottom: 24px;
+   }
+   
+   .product-price {
+       display: block;
+       font-size: 1.9rem; /* El precio resalta inmediatamente */
+       font-weight: 800;
+       color: var(--neon-cyan);
+       text-shadow: 0 0 15px rgba(0, 242, 254, 0.35);
+       margin-bottom: 26px;
+       margin-top: auto; /* Alinea los precios perfectamente abajo */
+   }
+   
+   /* Botón Premium Totalmente Estilizado */
+   .btn-add-cart {
+       width: 100%;
+       background: rgba(0, 242, 254, 0.03);
+       border: 1px solid rgba(0, 242, 254, 0.25);
+       color: var(--neon-cyan);
+       font-size: 1.05rem;
+       font-weight: 700;
+       padding: 16px;
+       border-radius: 14px;
+       cursor: pointer;
+       text-transform: uppercase;
+       letter-spacing: 0.06em;
+       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   
+   .btn-add-cart:hover:not(:disabled) {
+       background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan));
+       border-color: transparent;
+       color: #000000;
+       box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
+       transform: translateY(-2px);
+   }
+   
+   .btn-add-cart:disabled {
+       border-color: var(--border-color);
+       color: var(--text-muted);
+       background: transparent;
+       cursor: not-allowed;
+   }
+   
+   /* Skeletons Dinámicos */
+   .skeleton .product-image-placeholder {
+       background: linear-gradient(90deg, #101726 25%, #1b263f 50%, #101726 75%);
+       background-size: 200% 100%;
+       animation: loadingSkeleton 1.6s infinite;
+   }
+   
+   @keyframes loadingSkeleton {
+       0% { background-position: 200% 0; }
+       100% { background-position: -200% 0; }
+   }
+   
+   /* Bloques de Contacto */
+   .info-section {
+       background: #090d1a;
+       border-top: 1px solid var(--border-color);
+       padding: 100px 60px;
+   }
+   
+   .info-container {
+       max-width: 1600px;
+       margin: 0 auto;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+       gap: 60px;
+   }
+   
+   .info-block h3 {
+       color: var(--neon-cyan);
+       margin-bottom: 20px;
+       font-size: 1.4rem;
+       font-weight: 700;
+   }
+   
+   .info-block p {
+       font-size: 1.1rem;
+       color: var(--text-secondary);
+       margin-bottom: 8px;
+   }
+   
+   /* ==========================================================================
+      5. SECCIÓN FOOTERS Y CONSULTAS RESPONSIVAS (MEDIA QUERIES)
+      ========================================================================== */
+   footer, .admin-footer {
+       border-top: 1px solid var(--border-color);
+       background: #04060d;
+       padding: 50px 60px;
+       text-align: center;
+       font-size: 1rem;
+       color: var(--text-muted);
+   }
+   
+   footer p strong, .admin-footer p strong {
+       color: var(--text-secondary);
+   }
+   
+   /* Prevención de rupturas y adaptabilidad móvil */
+   @media (max-width: 1100px) {
+       .admin-header, .header-container {
+           flex-direction: column;
+           gap: 25px;
+           padding: 30px;
+       }
+       .admin-dashboard, .products-section, .info-section {
+           padding: 40px 20px;
+       }
+       .grid-two-columns, .data-grid {
+           grid-template-columns: 1fr;
+       }
+       .hero-content h2 {
+           font-size: 2.6rem;
+       }
+       .products-grid {
+           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+       }
+   }

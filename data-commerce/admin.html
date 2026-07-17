@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-brand">
+            <h1>Express Bite</h1>
+            <span class="badge">Panel Administrativo</span>
+        </div>
+        <nav class="admin-nav" aria-label="Navegación del panel">
+            <ul>
+                <li><a href="index.html">Vista Pública</a></li>
+                <li><a href="#kpis" class="active">Resumen Ejecutivo</a></li>
+                <li><a href="#rankings">Rankings y Ventas</a></li>
+                <li><a href="#inventario">Inventario y Alertas</a></li>
+                <li><a href="#proyeccion">Proyección de Demanda</a></li>
+            </ul>
+        </nav>
+        <div class="admin-profile">
+            <span id="current-date">Periodo Actual</span>
+        </div>
+    </header>
+    
+    <main class="admin-dashboard">
+        
+        <!-- SECCIÓN KPI: Tarjetas de Indicadores Clave -->
+        <section id="kpis" class="dashboard-section kpi-grid" aria-label="Indicadores Clave de Rendimiento">
+            <article class="kpi-card" id="kpi-ventas">
+                <div class="kpi-info">
+                    <h3>Ventas Totales</h3>
+                    <p class="kpi-value" id="val-ventas-totales">$ 0</p>
+                </div>
+                <div class="kpi-trend" id="trend-ventas">--</div>
+            </article>
+    
+            <article class="kpi-card" id="kpi-unidades">
+                <div class="kpi-info">
+                    <h3>Unidades Vendidas</h3>
+                    <p class="kpi-value" id="val-unidades-vendidas">0</p>
+                </div>
+                <div class="kpi-trend" id="trend-unidades">--</div>
+            </article>
+    
+            <article class="kpi-card" id="kpi-ticket">
+                <div class="kpi-info">
+                    <h3>Ticket Promedio</h3>
+                    <p class="kpi-value" id="val-ticket-promedio">$ 0</p>
+                </div>
+                <div class="kpi-trend" id="trend-ticket">--</div>
+            </article>
+    
+            <article class="kpi-card" id="kpi-estrella">
+                <div class="kpi-info">
+                    <h3>Producto Estrella</h3>
+                    <p class="kpi-value" id="val-producto-estrella">Cargando...</p>
+                </div>
+                <div class="kpi-subtext" id="subtext-estrella">Mayor volumen e ingresos</div>
+            </article>
+    
+            <article class="kpi-card" id="kpi-utilidad">
+                <div class="kpi-info">
+                    <h3>Utilidad Total</h3>
+                    <p class="kpi-value" id="val-utilidad-total">$ 0</p>
+                </div>
+                <div class="kpi-subtext" id="subtext-utilidad">Ingresos menos costo de compra</div>
+            </article>
+        </section>
+    
+        <!-- SECCIÓN RANKINGS: Tablas de rendimiento y contenedores para gráficos de barras CSS -->
+        <section id="rankings" class="dashboard-section data-grid" aria-label="Análisis de Rendimiento Comercial">
+            <div class="card-container text-chart-layout">
+                <header class="card-header">
+                    <h2>Top 5 Productos Destacados</h2>
+                    <p>Clasificación según ingresos totales generados</p>
+                </header>
+                <div class="card-content">
+                    <!-- Contenedor preparado para la inyección de barras CSS nativas mediante admin.js -->
+                    <div id="chart-top-productos" class="css-bar-chart" aria-label="Gráfico de ingresos por producto">
+                        <!-- Estructura de barra de referencia vacía -->
+                    </div>
+                    <div class="table-responsive">
+                        <table id="table-top-productos" class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Pos.</th>
+                                    <th>Producto</th>
+                                    <th>Unidades</th>
+                                    <th>Ingresos</th>
+                                    <th>% Part.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="text-center">Cargando datos de ventas...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card-container">
+                <header class="card-header">
+                    <h2>Análisis de Rentabilidad y Margen</h2>
+                    <p>Productos ordenados por margen de ganancia porcentual</p>
+                </header>
+                <div class="card-content">
+                    <div class="table-responsive">
+                        <table id="table-rentabilidad" class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Producto</th>
+                                    <th>Utilidad Total</th>
+                                    <th>Margen %</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="text-center">Calculando márgenes...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- SECCIÓN INVENTARIO: Control de Stock y Alertas de Desabastecimiento -->
+        <section id="inventario" class="dashboard-section stock-layout" aria-label="Gestión de Inventario">
+            <div class="card-container card-full-width">
+                <header class="card-header header-with-actions">
+                    <div>
+                        <h2>Estado de Inventario Crítico</h2>
+                        <p>Alertas de stock bajo basadas en la demanda observada del mes</p>
+                    </div>
+                    <span class="alert-indicator-badge" id="alert-counter">0 Alertas activas</span>
+                </header>
+                <div class="card-content">
+                    <div id="alerts-container" class="notification-zone">
+                        <!-- Mensajes de alerta urgentes inyectados dinámicamente -->
+                    </div>
+                    <div class="table-responsive">
+                        <table id="table-inventario-bajo" class="admin-table table-alerts">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Producto</th>
+                                    <th>Stock Actual</th>
+                                    <th>Demanda Registrada</th>
+                                    <th>Estado de Riesgo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="text-center">Evaluando existencias...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- SECCIÓN PROYECCIÓN: Estimación de demandas futuras -->
+        <section id="proyeccion" class="dashboard-section projection-layout" aria-label="Proyección y Planificación">
+            <div class="card-container card-full-width">
+                <header class="card-header">
+                    <h2>Estimación Simple de Demanda</h2>
+                    <p>Proyección comercial aproximada para el periodo de la próxima semana</p>
+                </header>
+                <div class="card-content grid-two-columns">
+                    <div class="projection-summary-box">
+                        <h3>Necesidades de Reabastecimiento</h3>
+                        <p>Productos con alta probabilidad de incremento en ventas que requieren reposición logística inmediata.</p>
+                        <ul id="list-necesidades-inventario" class="styled-list">
+                            <li>Analizando comportamiento histórico...</li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="table-proyeccion-demanda" class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Producto Próximo a Mayor Venta</th>
+                                    <th>Cantidad Estimada (Semana)</th>
+                                    <th>Prioridad de Compra</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="text-center">Procesando estimación analítica...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    
+    <footer class="admin-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Express Bite | Consola de Administración Comercial Interna</p>
+            <p>Infraestructura de Datos Integrada - <strong>Data Commerce Challenge</strong></p>
+        </div>
+    </footer>
+    
+    <script src="js/admin.js" defer></script>
+    <script src="js/patch.js"></script>
+</body>
+</html>

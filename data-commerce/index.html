@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Index</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Express Bite</h1>
+                <p>Data-Driven Flavor</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Nuestro Menú</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-status">
+                <a href="#carrito" aria-label="Ver carrito de compras">
+                    <span>Carrito</span>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main id="inicio">
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>El sabor que estabas buscando, optimizado para ti</h2>
+                <p>Descubre las combinaciones perfectas preparadas con ingredientes frescos y la velocidad que necesitas.</p>
+                <a href="#menu" class="btn-primary">Ver Menú Completo</a>
+            </div>
+        </section>
+    
+        <section id="destacados" class="products-section">
+            <div class="section-header">
+                <h2>Productos Destacados</h2>
+                <p>Los favoritos de la casa y las combinaciones más solicitadas de la semana.</p>
+            </div>
+            <div id="featured-container" class="products-grid">
+                <!-- Estructura de referencia para carga dinámica mediante app.js -->
+                <article class="product-card skeleton">
+                    <div class="product-image-placeholder"></div>
+                    <div class="product-info">
+                        <h3>Cargando producto...</h3>
+                        <p class="product-description">Espere un momento por favor.</p>
+                        <span class="product-price">$ 0.00</span>
+                        <button type="button" class="btn-add-cart" disabled>Añadir</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        <section id="menu" class="products-section">
+            <div class="section-header">
+                <h2>Nuestro Menú Completo</h2>
+                <div class="menu-categories">
+                    <button type="button" class="btn-category active" data-category="all">Todos</button>
+                    <button type="button" class="btn-category" data-category="combos">Combos</button>
+                    <button type="button" class="btn-category" data-category="individuales">Individuales</button>
+                    <button type="button" class="btn-category" data-category="bebidas">Bebidas</button>
+                </div>
+            </div>
+            <div id="menu-container" class="products-grid">
+                <!-- Los elementos de este contenedor se inyectarán dinámicamente desde el inventario mediante app.js -->
+            </div>
+        </section>
+    
+        <section id="contacto" class="info-section">
+            <div class="info-container">
+                <article class="info-block">
+                    <h3>Horarios de Atención</h3>
+                    <p>Lunes a Jueves: 4:00 PM - 10:00 PM</p>
+                    <p>Viernes a Domingo: 12:00 PM - 11:30 PM</p>
+                </article>
+                <article class="info-block">
+                    <h3>Ubicación y Pedidos</h3>
+                    <p>Zona Centro Comercial, Piso 1</p>
+                    <p>Línea Directa: +57 (300) 000-0000</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Express Bite. Todos los derechos reservados.</p>
+            <p>Proyecto Académico - <strong>Data Commerce Challenge</strong></p>
+        </div>
+    </footer>
+    
+    <script src="js/app.js" defer></script>
+    <script src="js/patch.js"></script>
+</body>
+</html>

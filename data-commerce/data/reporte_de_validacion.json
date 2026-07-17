@@ -1,0 +1,31 @@
+{
+    "estado_validacion": "correcto",
+    "errores": [],
+    "advertencias": [],
+    "resumen": {
+    "registros_ventas": 114,
+    "productos_inventario": 15,
+    "productos_relacionados": 15
+    },
+    "detalle_validacion": {
+    "ventas": {
+    "estructura": "correcta",
+    "fechas": "correctas",
+    "calculos_total": "correctos",
+    "productos": "correctos"
+    },
+    "inventario": {
+    "estructura": "correcta",
+    "productos": "correctos",
+    "margenes": "correctos"
+    },
+    "relacion": {
+    "id_producto": "correcto",
+    "productos_existentes": "correcto"
+    }
+    },
+    "recomendaciones": [
+    "Mantener el control estricto sobre las relaciones de llaves foráneas mediante id_producto para los meses subsiguientes.",
+    "Proceder directamente con la etapa de Análisis Ejecutivo con IA, dado que el estado de validación cumple con el criterio de calidad óptimo sin discrepancias numéricas ni estructurales."
+    ]
+    }
