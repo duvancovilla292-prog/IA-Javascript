@@ -1,0 +1,882 @@
+[
+    {
+    "fecha": "2026-05-01",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 2,
+    "valor_unitario": 24000,
+    "total": 48000
+    },
+    {
+    "fecha": "2026-05-01",
+    "id_producto": "P003",
+    "producto": "Perro Caliente Suizo",
+    "cantidad": 1,
+    "valor_unitario": 16000,
+    "total": 16000
+    },
+    {
+    "fecha": "2026-05-01",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 3,
+    "valor_unitario": 8000,
+    "total": 24000
+    },
+    {
+    "fecha": "2026-05-01",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 4,
+    "valor_unitario": 5000,
+    "total": 20000
+    },
+    {
+    "fecha": "2026-05-02",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 3,
+    "valor_unitario": 24000,
+    "total": 72000
+    },
+    {
+    "fecha": "2026-05-02",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 2,
+    "valor_unitario": 32000,
+    "total": 64000
+    },
+    {
+    "fecha": "2026-05-02",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 1,
+    "valor_unitario": 19000,
+    "total": 19000
+    },
+    {
+    "fecha": "2026-05-02",
+    "id_producto": "P009",
+    "producto": "Alitas BBQ x8",
+    "cantidad": 1,
+    "valor_unitario": 22000,
+    "total": 22000
+    },
+    {
+    "fecha": "2026-05-02",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 3,
+    "valor_unitario": 5000,
+    "total": 15000
+    },
+    {
+    "fecha": "2026-05-02",
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "cantidad": 2,
+    "valor_unitario": 11000,
+    "total": 22000
+    },
+    {
+    "fecha": "2026-05-03",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 4,
+    "valor_unitario": 32000,
+    "total": 128000
+    },
+    {
+    "fecha": "2026-05-03",
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "cantidad": 2,
+    "valor_unitario": 21000,
+    "total": 42000
+    },
+    {
+    "fecha": "2026-05-03",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 2,
+    "valor_unitario": 8000,
+    "total": 16000
+    },
+    {
+    "fecha": "2026-05-03",
+    "id_producto": "P010",
+    "producto": "Wrap de Pollo Teriyaki",
+    "cantidad": 1,
+    "valor_unitario": 17500,
+    "total": 17500
+    },
+    {
+    "fecha": "2026-05-03",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 5,
+    "valor_unitario": 5000,
+    "total": 25000
+    },
+    {
+    "fecha": "2026-05-03",
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "cantidad": 2,
+    "valor_unitario": 6500,
+    "total": 13000
+    },
+    {
+    "fecha": "2026-05-04",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 1,
+    "valor_unitario": 24000,
+    "total": 24000
+    },
+    {
+    "fecha": "2026-05-04",
+    "id_producto": "P008",
+    "producto": "Nuggets de Pollo x10",
+    "cantidad": 1,
+    "valor_unitario": 14000,
+    "total": 14000
+    },
+    {
+    "fecha": "2026-05-04",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 1,
+    "valor_unitario": 5000,
+    "total": 5000
+    },
+    {
+    "fecha": "2026-05-05",
+    "id_producto": "P003",
+    "producto": "Perro Caliente Suizo",
+    "cantidad": 2,
+    "valor_unitario": 16000,
+    "total": 32000
+    },
+    {
+    "fecha": "2026-05-05",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 1,
+    "valor_unitario": 8000,
+    "total": 8000
+    },
+    {
+    "fecha": "2026-05-06",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 1,
+    "valor_unitario": 32000,
+    "total": 32000
+    },
+    {
+    "fecha": "2026-05-06",
+    "id_producto": "P012",
+    "producto": "Jugo Natural en Agua",
+    "cantidad": 2,
+    "valor_unitario": 6000,
+    "total": 12000
+    },
+    {
+    "fecha": "2026-05-07",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 2,
+    "valor_unitario": 19000,
+    "total": 38000
+    },
+    {
+    "fecha": "2026-05-07",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 2,
+    "valor_unitario": 5000,
+    "total": 10000
+    },
+    {
+    "fecha": "2026-05-08",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 2,
+    "valor_unitario": 24000,
+    "total": 48000
+    },
+    {
+    "fecha": "2026-05-08",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 3,
+    "valor_unitario": 32000,
+    "total": 96000
+    },
+    {
+    "fecha": "2026-05-08",
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "cantidad": 1,
+    "valor_unitario": 21000,
+    "total": 21000
+    },
+    {
+    "fecha": "2026-05-08",
+    "id_producto": "P009",
+    "producto": "Alitas BBQ x8",
+    "cantidad": 2,
+    "valor_unitario": 22000,
+    "total": 44000
+    },
+    {
+    "fecha": "2026-05-08",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 4,
+    "valor_unitario": 5000,
+    "total": 20000
+    },
+    {
+    "fecha": "2026-05-08",
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "cantidad": 1,
+    "valor_unitario": 11000,
+    "total": 11000
+    },
+    {
+    "fecha": "2026-05-09",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 5,
+    "valor_unitario": 32000,
+    "total": 160000
+    },
+    {
+    "fecha": "2026-05-09",
+    "id_producto": "P004",
+    "producto": "Combo Perro Caliente + Papas + Gaseosa",
+    "cantidad": 3,
+    "valor_unitario": 23000,
+    "total": 69000
+    },
+    {
+    "fecha": "2026-05-09",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 2,
+    "valor_unitario": 8000,
+    "total": 16000
+    },
+    {
+    "fecha": "2026-05-09",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 3,
+    "valor_unitario": 5000,
+    "total": 15000
+    },
+    {
+    "fecha": "2026-05-09",
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "cantidad": 4,
+    "valor_unitario": 6500,
+    "total": 26000
+    },
+    {
+    "fecha": "2026-05-09",
+    "id_producto": "P015",
+    "producto": "Sundae de Arequipe",
+    "cantidad": 3,
+    "valor_unitario": 7500,
+    "total": 22500
+    },
+    {
+    "fecha": "2026-05-10",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 4,
+    "valor_unitario": 24000,
+    "total": 96000
+    },
+    {
+    "fecha": "2026-05-10",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 6,
+    "valor_unitario": 32000,
+    "total": 192000
+    },
+    {
+    "fecha": "2026-05-10",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 3,
+    "valor_unitario": 19000,
+    "total": 57000
+    },
+    {
+    "fecha": "2026-05-10",
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "cantidad": 2,
+    "valor_unitario": 21000,
+    "total": 42000
+    },
+    {
+    "fecha": "2026-05-10",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 6,
+    "valor_unitario": 5000,
+    "total": 30000
+    },
+    {
+    "fecha": "2026-05-10",
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "cantidad": 3,
+    "valor_unitario": 11000,
+    "total": 33000
+    },
+    {
+    "fecha": "2026-05-11",
+    "id_producto": "P003",
+    "producto": "Perro Caliente Suizo",
+    "cantidad": 1,
+    "valor_unitario": 16000,
+    "total": 16000
+    },
+    {
+    "fecha": "2026-05-11",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 1,
+    "valor_unitario": 5000,
+    "total": 5000
+    },
+    {
+    "fecha": "2026-05-12",
+    "id_producto": "P008",
+    "producto": "Nuggets de Pollo x10",
+    "cantidad": 2,
+    "valor_unitario": 14000,
+    "total": 28000
+    },
+    {
+    "fecha": "2026-05-12",
+    "id_producto": "P012",
+    "producto": "Jugo Natural en Agua",
+    "cantidad": 1,
+    "valor_unitario": 6000,
+    "total": 6000
+    },
+    {
+    "fecha": "2026-05-13",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 1,
+    "valor_unitario": 24000,
+    "total": 24000
+    },
+    {
+    "fecha": "2026-05-13",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 2,
+    "valor_unitario": 8000,
+    "total": 16000
+    },
+    {
+    "fecha": "2026-05-14",
+    "id_producto": "P010",
+    "producto": "Wrap de Pollo Teriyaki",
+    "cantidad": 2,
+    "valor_unitario": 17500,
+    "total": 35000
+    },
+    {
+    "fecha": "2026-05-14",
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "cantidad": 2,
+    "valor_unitario": 6500,
+    "total": 13000
+    },
+    {
+    "fecha": "2026-05-15",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 4,
+    "valor_unitario": 32000,
+    "total": 128000
+    },
+    {
+    "fecha": "2026-05-15",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 2,
+    "valor_unitario": 19000,
+    "total": 38000
+    },
+    {
+    "fecha": "2026-05-15",
+    "id_producto": "P009",
+    "producto": "Alitas BBQ x8",
+    "cantidad": 3,
+    "valor_unitario": 22000,
+    "total": 66000
+    },
+    {
+    "fecha": "2026-05-15",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 5,
+    "valor_unitario": 5000,
+    "total": 25000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 5,
+    "valor_unitario": 24000,
+    "total": 120000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 7,
+    "valor_unitario": 32000,
+    "total": 224000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P004",
+    "producto": "Combo Perro Caliente + Papas + Gaseosa",
+    "cantidad": 4,
+    "valor_unitario": 23000,
+    "total": 92000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "cantidad": 3,
+    "valor_unitario": 21000,
+    "total": 63000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 8,
+    "valor_unitario": 5000,
+    "total": 40000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "cantidad": 4,
+    "valor_unitario": 11000,
+    "total": 44000
+    },
+    {
+    "fecha": "2026-05-16",
+    "id_producto": "P015",
+    "producto": "Sundae de Arequipe",
+    "cantidad": 2,
+    "valor_unitario": 7500,
+    "total": 15000
+    },
+    {
+    "fecha": "2026-05-17",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 8,
+    "valor_unitario": 32000,
+    "total": 256000
+    },
+    {
+    "fecha": "2026-05-17",
+    "id_producto": "P003",
+    "producto": "Perro Caliente Suizo",
+    "cantidad": 3,
+    "valor_unitario": 16000,
+    "total": 48000
+    },
+    {
+    "fecha": "2026-05-17",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 4,
+    "valor_unitario": 8000,
+    "total": 32000
+    },
+    {
+    "fecha": "2026-05-17",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 7,
+    "valor_unitario": 5000,
+    "total": 35000
+    },
+    {
+    "fecha": "2026-05-17",
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "cantidad": 3,
+    "valor_unitario": 6500,
+    "total": 19500
+    },
+    {
+    "fecha": "2026-05-18",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 1,
+    "valor_unitario": 24000,
+    "total": 24000
+    },
+    {
+    "fecha": "2026-05-18",
+    "id_producto": "P008",
+    "producto": "Nuggets de Pollo x10",
+    "cantidad": 1,
+    "valor_unitario": 14000,
+    "total": 14000
+    },
+    {
+    "fecha": "2026-05-19",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 1,
+    "valor_unitario": 19000,
+    "total": 19000
+    },
+    {
+    "fecha": "2026-05-20",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 2,
+    "valor_unitario": 32000,
+    "total": 64000
+    },
+    {
+    "fecha": "2026-05-20",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 2,
+    "valor_unitario": 5000,
+    "total": 10000
+    },
+    {
+    "fecha": "2026-05-21",
+    "id_producto": "P010",
+    "producto": "Wrap de Pollo Teriyaki",
+    "cantidad": 1,
+    "valor_unitario": 17500,
+    "total": 17500
+    },
+    {
+    "fecha": "2026-05-22",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 3,
+    "valor_unitario": 24000,
+    "total": 72000
+    },
+    {
+    "fecha": "2026-05-22",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 4,
+    "valor_unitario": 32000,
+    "total": 128000
+    },
+    {
+    "fecha": "2026-05-22",
+    "id_producto": "P009",
+    "producto": "Alitas BBQ x8",
+    "cantidad": 2,
+    "valor_unitario": 22000,
+    "total": 44000
+    },
+    {
+    "fecha": "2026-05-22",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 4,
+    "valor_unitario": 5000,
+    "total": 20000
+    },
+    {
+    "fecha": "2026-05-23",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 6,
+    "valor_unitario": 32000,
+    "total": 192000
+    },
+    {
+    "fecha": "2026-05-23",
+    "id_producto": "P004",
+    "producto": "Combo Perro Caliente + Papas + Gaseosa",
+    "cantidad": 3,
+    "valor_unitario": 23000,
+    "total": 69000
+    },
+    {
+    "fecha": "2026-05-23",
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "cantidad": 2,
+    "valor_unitario": 21000,
+    "total": 42000
+    },
+    {
+    "fecha": "2026-05-23",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 3,
+    "valor_unitario": 8000,
+    "total": 24000
+    },
+    {
+    "fecha": "2026-05-23",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 6,
+    "valor_unitario": 5000,
+    "total": 30000
+    },
+    {
+    "fecha": "2026-05-23",
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "cantidad": 2,
+    "valor_unitario": 11000,
+    "total": 22000
+    },
+    {
+    "fecha": "2026-05-24",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 4,
+    "valor_unitario": 24000,
+    "total": 96000
+    },
+    {
+    "fecha": "2026-05-24",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 7,
+    "valor_unitario": 32000,
+    "total": 224000
+    },
+    {
+    "fecha": "2026-05-24",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 3,
+    "valor_unitario": 19000,
+    "total": 57000
+    },
+    {
+    "fecha": "2026-05-24",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 5,
+    "valor_unitario": 5000,
+    "total": 25000
+    },
+    {
+    "fecha": "2026-05-24",
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "cantidad": 3,
+    "valor_unitario": 6500,
+    "total": 19500
+    },
+    {
+    "fecha": "2026-05-24",
+    "id_producto": "P015",
+    "producto": "Sundae de Arequipe",
+    "cantidad": 4,
+    "valor_unitario": 7500,
+    "total": 30000
+    },
+    {
+    "fecha": "2026-05-25",
+    "id_producto": "P003",
+    "producto": "Perro Caliente Suizo",
+    "cantidad": 2,
+    "valor_unitario": 16000,
+    "total": 32000
+    },
+    {
+    "fecha": "2026-05-25",
+    "id_producto": "P012",
+    "producto": "Jugo Natural en Agua",
+    "cantidad": 1,
+    "valor_unitario": 6000,
+    "total": 6000
+    },
+    {
+    "fecha": "2026-05-26",
+    "id_producto": "P008",
+    "producto": "Nuggets de Pollo x10",
+    "cantidad": 1,
+    "valor_unitario": 14000,
+    "total": 14000
+    },
+    {
+    "fecha": "2026-05-27",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 2,
+    "valor_unitario": 32000,
+    "total": 64000
+    },
+    {
+    "fecha": "2026-05-28",
+    "id_producto": "P010",
+    "producto": "Wrap de Pollo Teriyaki",
+    "cantidad": 2,
+    "valor_unitario": 17500,
+    "total": 35000
+    },
+    {
+    "fecha": "2026-05-29",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 3,
+    "valor_unitario": 24000,
+    "total": 72000
+    },
+    {
+    "fecha": "2026-05-29",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 5,
+    "valor_unitario": 32000,
+    "total": 160000
+    },
+    {
+    "fecha": "2026-05-29",
+    "id_producto": "P009",
+    "producto": "Alitas BBQ x8",
+    "cantidad": 2,
+    "valor_unitario": 22000,
+    "total": 44000
+    },
+    {
+    "fecha": "2026-05-29",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 4,
+    "valor_unitario": 5000,
+    "total": 20000
+    },
+    {
+    "fecha": "2026-05-30",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 8,
+    "valor_unitario": 32000,
+    "total": 256000
+    },
+    {
+    "fecha": "2026-05-30",
+    "id_producto": "P004",
+    "producto": "Combo Perro Caliente + Papas + Gaseosa",
+    "cantidad": 4,
+    "valor_unitario": 23000,
+    "total": 92000
+    },
+    {
+    "fecha": "2026-05-30",
+    "id_producto": "P006",
+    "producto": "Salchipapa Salvaje",
+    "cantidad": 3,
+    "valor_unitario": 21000,
+    "total": 63000
+    },
+    {
+    "fecha": "2026-05-30",
+    "id_producto": "P007",
+    "producto": "Papas Fritas Medianas",
+    "cantidad": 3,
+    "valor_unitario": 8000,
+    "total": 24000
+    },
+    {
+    "fecha": "2026-05-30",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 8,
+    "valor_unitario": 5000,
+    "total": 40000
+    },
+    {
+    "fecha": "2026-05-30",
+    "id_producto": "P013",
+    "producto": "Malteada de Chocolate",
+    "cantidad": 4,
+    "valor_unitario": 11000,
+    "total": 44000
+    },
+    {
+    "fecha": "2026-05-31",
+    "id_producto": "P001",
+    "producto": "Hamburguesa Súper Especial",
+    "cantidad": 5,
+    "valor_unitario": 24000,
+    "total": 120000
+    },
+    {
+    "fecha": "2026-05-31",
+    "id_producto": "P002",
+    "producto": "Combo Hamburguesa + Papas + Gaseosa",
+    "cantidad": 9,
+    "valor_unitario": 32000,
+    "total": 288000
+    },
+    {
+    "fecha": "2026-05-31",
+    "id_producto": "P005",
+    "producto": "Pizza Personal Pepperoni",
+    "cantidad": 4,
+    "valor_unitario": 19000,
+    "total": 76000
+    },
+    {
+    "fecha": "2026-05-31",
+    "id_producto": "P011",
+    "producto": "Gaseosa 400ml",
+    "cantidad": 7,
+    "valor_unitario": 5000,
+    "total": 35000
+    },
+    {
+    "fecha": "2026-05-31",
+    "id_producto": "P014",
+    "producto": "Limonada Natural",
+    "cantidad": 4,
+    "valor_unitario": 6500,
+    "total": 26000
+    },
+    {
+    "fecha": "2026-05-31",
+    "id_producto": "P015",
+    "producto": "Sundae de Arequipe",
+    "cantidad": 5,
+    "valor_unitario": 7500,
+    "total": 37500
+    }
+    ]
