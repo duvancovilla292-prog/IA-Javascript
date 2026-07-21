@@ -305,7 +305,7 @@
             actualizarRenderCarrito();
             document.getElementById("cyberbite-cart-overlay").classList.remove("open");
 
-            window.open(`https://api.whatsapp.com/send?phone=573151234567&text=${encodeURIComponent(mensajeWhatsApp)}`, "_blank");
+            window.open(`https://api.whatsapp.com/send?phone=573132888611&text=${encodeURIComponent(mensajeWhatsApp)}`, "_blank");
         });
 
         // Fallback global por compatibilidad inline

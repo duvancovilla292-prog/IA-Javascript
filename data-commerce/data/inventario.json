@@ -1,122 +1,137 @@
 [
     {
-    "id_producto": "P001",
-    "producto": "Hamburguesa Súper Especial",
-    "cantidad_existente": 145,
-    "proveedor": "Distribuidores de Carne El Corralito",
-    "valor_compra": 14400,
-    "valor_venta": 24000
+      "id_producto": "P001",
+      "producto": "Hamburguesa Súper Especial",
+      "cantidad_existente": 145,
+      "proveedor": "Distribuidores de Carne El Corralito",
+      "valor_compra": 14400,
+      "valor_venta": 24000,
+      "imagen": "img/img Hamburguesa 01.jpg"
     },
     {
-    "id_producto": "P002",
-    "producto": "Combo Hamburguesa + Papas + Gaseosa",
-    "cantidad_existente": 210,
-    "proveedor": "Alimentos y Combos Express S.A.S.",
-    "valor_compra": 18560,
-    "valor_venta": 32000
+      "id_producto": "P002",
+      "producto": "Combo Hamburguesa + Papas + Gaseosa",
+      "cantidad_existente": 210,
+      "proveedor": "Alimentos y Combos Express S.A.S.",
+      "valor_compra": 18560,
+      "valor_venta": 32000,
+      "imagen": "img/img combo 02.jpg"
     },
     {
-    "id_producto": "P003",
-    "producto": "Perro Caliente Suizo",
-    "cantidad_existente": 65,
-    "proveedor": "Embutidos del Norte",
-    "valor_compra": 10240,
-    "valor_venta": 16000
+      "id_producto": "P003",
+      "producto": "Perro Caliente Suizo",
+      "cantidad_existente": 65,
+      "proveedor": "Embutidos del Norte",
+      "valor_compra": 10240,
+      "valor_venta": 16000,
+      "imagen": "img/img perro 03.jpg"
     },
     {
-    "id_producto": "P004",
-    "producto": "Combo Perro Caliente + Papas + Gaseosa",
-    "cantidad_existente": 95,
-    "proveedor": "Alimentos y Combos Express S.A.S.",
-    "valor_compra": 13570,
-    "valor_venta": 23000
+      "id_producto": "P004",
+      "producto": "Combo Perro Caliente + Papas + Gaseosa",
+      "cantidad_existente": 95,
+      "proveedor": "Alimentos y Combos Express S.A.S.",
+      "valor_compra": 13570,
+      "valor_venta": 23000,
+      "imagen": "img/img combo perro 04.jpeg"
     },
     {
-    "id_producto": "P005",
-    "producto": "Pizza Personal Pepperoni",
-    "cantidad_existente": 80,
-    "proveedor": "Lácteos y Masas Precocidas S.A.",
-    "valor_compra": 11780,
-    "valor_venta": 19000
+      "id_producto": "P005",
+      "producto": "Pizza Personal Pepperoni",
+      "cantidad_existente": 80,
+      "proveedor": "Lácteos y Masas Precocidas S.A.",
+      "valor_compra": 11780,
+      "valor_venta": 19000,
+      "imagen": "img/img pizza 05.jpg"
     },
     {
-    "id_producto": "P006",
-    "producto": "Salchipapa Salvaje",
-    "cantidad_existente": 55,
-    "proveedor": "Embutidos del Norte",
-    "valor_compra": 13230,
-    "valor_venta": 21000
+      "id_producto": "P006",
+      "producto": "Salchipapa Salvaje",
+      "cantidad_existente": 55,
+      "proveedor": "Embutidos del Norte",
+      "valor_compra": 13230,
+      "valor_venta": 21000,
+      "imagen": "img/img salchipapa 06.webp"
     },
     {
-    "id_producto": "P007",
-    "producto": "Papas Fritas Medianas",
-    "cantidad_existente": 18,
-    "proveedor": "Congelados Agropecuarios",
-    "valor_compra": 4480,
-    "valor_venta": 8000
+      "id_producto": "P007",
+      "producto": "Papas Fritas Medianas",
+      "cantidad_existente": 18,
+      "proveedor": "Congelados Agropecuarios",
+      "valor_compra": 4480,
+      "valor_venta": 8000,
+      "imagen": "img/img papas 07.jpg"
     },
     {
-    "id_producto": "P008",
-    "producto": "Nuggets de Pollo x10",
-    "cantidad_existente": 40,
-    "proveedor": "Avícola Central",
-    "valor_compra": 8820,
-    "valor_venta": 14000
+      "id_producto": "P008",
+      "producto": "Nuggets de Pollo x10",
+      "cantidad_existente": 40,
+      "proveedor": "Avícola Central",
+      "valor_compra": 8820,
+      "valor_venta": 14000,
+      "imagen": "img/img nuggets pollo 08.jpg"
     },
     {
-    "id_producto": "P009",
-    "producto": "Alitas BBQ x8",
-    "cantidad_existente": 32,
-    "proveedor": "Avícola Central",
-    "valor_compra": 14300,
-    "valor_venta": 22000
+      "id_producto": "P009",
+      "producto": "Alitas BBQ x8",
+      "cantidad_existente": 32,
+      "proveedor": "Avícola Central",
+      "valor_compra": 14300,
+      "valor_venta": 22000,
+      "imagen": "img/img alitas BBQ 09.jpg"
     },
     {
-    "id_producto": "P010",
-    "producto": "Wrap de Pollo Teriyaki",
-    "cantidad_existente": 12,
-    "proveedor": "Comercializadora de Alimentos Frescos",
-    "valor_compra": 11025,
-    "valor_venta": 17500
+      "id_producto": "P010",
+      "producto": "Wrap de Pollo Teriyaki",
+      "cantidad_existente": 12,
+      "proveedor": "Comercializadora de Alimentos Frescos",
+      "valor_compra": 11025,
+      "valor_venta": 17500,
+      "imagen": "img/img wrap pollo teriyaki 10.jpg"
     },
     {
-    "id_producto": "P011",
-    "producto": "Gaseosa 400ml",
-    "cantidad_existente": 340,
-    "proveedor": "Embotelladora Nacional",
-    "valor_compra": 2650,
-    "valor_venta": 5000
+      "id_producto": "P011",
+      "producto": "Gaseosa 400ml",
+      "cantidad_existente": 340,
+      "proveedor": "Embotelladora Nacional",
+      "valor_compra": 2650,
+      "valor_venta": 5000,
+      "imagen": "img/img gaseosas 11.jpg"
     },
     {
-    "id_producto": "P012",
-    "producto": "Jugo Natural en Agua",
-    "cantidad_existente": 50,
-    "proveedor": "Frubasur Central de Abastos",
-    "valor_compra": 3480,
-    "valor_venta": 6000
+      "id_producto": "P012",
+      "producto": "Jugo Natural en Agua",
+      "cantidad_existente": 50,
+      "proveedor": "Frubasur Central de Abastos",
+      "valor_compra": 3480,
+      "valor_venta": 6000,
+      "imagen": "img/img jugos naturales 12.jpg"
     },
     {
-    "id_producto": "P013",
-    "producto": "Malteada de Chocolate",
-    "cantidad_existente": 75,
-    "proveedor": "Distribuidora Láctea San Juan",
-    "valor_compra": 6710,
-    "valor_venta": 11000
+      "id_producto": "P013",
+      "producto": "Malteada de Chocolate",
+      "cantidad_existente": 75,
+      "proveedor": "Distribuidora Láctea San Juan",
+      "valor_compra": 6710,
+      "valor_venta": 11000,
+      "imagen": "img/img malteada chocoloate 13.jpg"
     },
     {
-    "id_producto": "P014",
-    "producto": "Limonada Natural",
-    "cantidad_existente": 110,
-    "proveedor": "Frubasur Central de Abastos",
-    "valor_compra": 3510,
-    "valor_venta": 6500
+      "id_producto": "P014",
+      "producto": "Limonada Natural",
+      "cantidad_existente": 110,
+      "proveedor": "Frubasur Central de Abastos",
+      "valor_compra": 3510,
+      "valor_venta": 6500,
+      "imagen": "img/img limonada 14.jpg"
     },
     {
-    "id_producto": "P015",
-    "producto": "Sundae de Arequipe",
-    "cantidad_existente": 85,
-    "proveedor": "Distribuidora Láctea San Juan",
-    "valor_compra": 4350,
-    "valor_venta": 7500
+      "id_producto": "P015",
+      "producto": "Sundae de Arequipe",
+      "cantidad_existente": 85,
+      "proveedor": "Distribuidora Láctea San Juan",
+      "valor_compra": 4350,
+      "valor_venta": 7500,
+      "imagen": "img/img sundae arequipe 15.jpg"
     }
-    ]
+  ]

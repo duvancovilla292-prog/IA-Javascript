@@ -118,11 +118,16 @@ function crearTarjetaProducto(producto, esDestacado) {
     const precioFormateado = formateadorMoneda.format(producto.precio_venta || producto.valor_venta || 0);
     const etiquetaBadge = esDestacado ? `<span class="badge-destacado">🔥 Más Vendido</span>` : '';
 
+    // Renderiza la imagen asegurando un tamaño fijo uniforme y ajuste recortado proporcional (object-fit: cover)
+    const imagenHTML = producto.imagen 
+        ? `<img src="${producto.imagen}" alt="${producto.nombre || producto.producto}" class="product-image" style="width: 100%; height: 200px; object-fit: cover; display: block; border-radius: 8px 8px 0 0;">`
+        : `<div class="product-image-placeholder-active" style="width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🍔</div>`;
+
     return `
         <article class="product-card" data-id="${producto.id_producto}" data-categoria="${producto.categoria || 'individuales'}">
-            <div class="product-image-container">
+            <div class="product-image-container" style="width: 100%; height: 200px; overflow: hidden; position: relative;">
                 ${etiquetaBadge}
-                <div class="product-image-placeholder-active">🍔</div>
+                ${imagenHTML}
             </div>
             <div class="product-info">
                 <h3>${producto.nombre || producto.producto}</h3>
